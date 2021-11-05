@@ -1,0 +1,9 @@
+<div class="fixed-top navbar-lewagon navbar-collapse navbar-brand">
+  <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
+  <div> <%= select_tag "timezone", options_from_collection_for_select(
+    ActiveSupport::TimeZone.all, :name, :name),
+    class: 'select2', prompt: "Choose your city"%>
+
+</div>
+
+</div>
